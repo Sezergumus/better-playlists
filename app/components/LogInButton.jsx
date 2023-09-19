@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function LogInButton({ buttonText }) {
   const authEndpoint = "https://accounts.spotify.com/authorize";
-  const redirectUri = "http://localhost:3000";
+  const redirectUri = "https://betterplaylists.sezergumus.dev";
   const clientId = "a338ac7473534abcb3c7b9eacfdd3989";
 
   const scopes = [
