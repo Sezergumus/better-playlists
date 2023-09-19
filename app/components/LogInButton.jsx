@@ -13,6 +13,7 @@ export default function LogInButton({ buttonText }) {
     "playlist-read-collaborative",
     "playlist-read-private",
     "playlist-modify-public",
+    "playlist-modify-private",
   ];
 
   const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
