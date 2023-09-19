@@ -66,21 +66,48 @@
   padding-bottom: 8px;
 }
 
-.selected-modal::-webkit-scrollbar-track,
-.top-tracks::-webkit-scrollbar-track {
+.selected-modal::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d7dbff;
 }
 
-.selected-modal::-webkit-scrollbar,
-.top-tracks::-webkit-scrollbar {
+.selected-modal::-webkit-scrollbar {
   height: 8px;
   background-color: #d7dbff;
 }
 
-.selected-modal::-webkit-scrollbar-thumb,
-.top-tracks::-webkit-scrollbar-thumb {
+.selected-modal::-webkit-scrollbar-thumb {
   background-color: #c5ff25;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.artists-container::-webkit-scrollbar-track,
+.tracks-container::-webkit-scrollbar-track,
+.playlists::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--background-color);
+}
+
+.artists-container::-webkit-scrollbar,
+.tracks-container::-webkit-scrollbar,
+.playlists::-webkit-scrollbar {
+  height: 8px;
+  background-color: var(--background-color);
+}
+
+.artists-container::-webkit-scrollbar-thumb,
+.tracks-container::-webkit-scrollbar-thumb,
+.playlists::-webkit-scrollbar-thumb {
+  background-color: var(--link-color);
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 25%,
